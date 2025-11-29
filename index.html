@@ -1,15 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Work Showcase</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 2024 Earnings Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.min.js"></script>
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+        }
+        .email-footer {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            font-size: 0.5em;
+            color: #888;
+        }
+        .highlight-green {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .highlight-red {
+            color: #f44336;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to My Work Showcase</h1>
-  <p>This page highlights my work for TDS GA2</p>
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Title Slide -->
+            <section>
+                <h1>Q4 2024 Earnings Report</h1>
+                <h3>Financial Performance & Strategic Outlook</h3>
+                <p>
+                    <small>Prepared by: Technical Consultant</small><br>
+                    <small>Email: 23f2003009@ds.study.iitm.ac.in</small>
+                </p>
+                <aside class="notes">
+                    Welcome everyone to our Q4 2024 earnings presentation. Today we'll cover our financial performance, key metrics, and strategic initiatives for the coming year. The presentation should take approximately 20 minutes.
+                </aside>
+            </section>
 
-  <p>Contact me at: 
-    <!--email_off-->23f2003009@ds.study.iitm.ac.in<!--/email_off-->
-  </p>
+            <!-- Executive Summary (Markdown) -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Executive Summary
+                    
+                    ### Key Highlights
+                    
+                    * **Revenue Growth**: 23.5% YoY increase
+                    * **Net Profit Margin**: Improved to 18.2%
+                    * **Customer Base**: Expanded by 340,000 accounts
+                    * **Digital Adoption**: 67% of transactions now digital
+                    
+                    ---
+                    
+                    ### Strategic Achievements
+                    
+                    - Launched new mobile banking platform
+                    - Implemented AI-driven fraud detection
+                    - Expanded into 3 new markets
+                    - Reduced operational costs by 12%
+                    
+                    Note: This markdown slide demonstrates RevealJS's built-in markdown support for easy content creation.
+                </textarea>
+            </section>
+
+            <!-- Financial Metrics with Fragments -->
+            <section>
+                <h2>Q4 Financial Metrics</h2>
+                <div style="text-align: left; margin-left: 100px;">
+                    <p class="fragment fade-in-then-semi-out">
+                        <strong>Total Revenue:</strong> <span class="highlight-green">$2.47 Billion</span>
+                    </p>
+                    <p class="fragment fade-in-then-semi-out">
+                        <strong>Operating Income:</strong> <span class="highlight-green">$612 Million</span>
+                    </p>
+                    <p class="fragment fade-in-then-semi-out">
+                        <strong>Net Income:</strong> <span class="highlight-green">$450 Million</span>
+                    </p>
+                    <p class="fragment fade-in-then-semi-out">
+                        <strong>EPS (Diluted):</strong> <span class="highlight-green">$3.25</span>
+                    </p>
+                    <p class="fragment grow">
+                        <strong>Return on Equity:</strong> <span class="highlight-green">16.8%</span> 🎯
+                    </p>
+                </div>
+                <aside class="notes">
+                    Notice the strong performance across all key metrics. Revenue exceeded analyst expectations by 4.2%. The ROE of 16.8% demonstrates efficient capital utilization and positions us well above industry average of 13%.
+                </aside>
+            </section>
+
+            <!-- Mathematical Formulas -->
+            <section>
+                <h2>Key Financial Calculations</h2>
+                <div style="font-size: 0.8em;">
+                    <h4>Return on Equity (ROE)</h4>
+                    <p>$$ ROE = \frac{Net\ Income}{Shareholder\ Equity} \times 100 $$</p>
+                    
+                    <h4 class="fragment">Compound Annual Growth Rate (CAGR)</h4>
+                    <p class="fragment">$$ CAGR = \left(\frac{Ending\ Value}{Beginning\ Value}\right)^{\frac{1}{n}} - 1 $$</p>
+                    
+                    <h4 class="fragment">Risk-Adjusted Return (Sharpe Ratio)</h4>
+                    <p class="fragment">$$ Sharpe\ Ratio = \frac{R_p - R_f}{\sigma_p} $$</p>
+                    <p class="fragment" style="font-size: 0.7em;">
+                        Where: $R_p$ = Portfolio Return, $R_f$ = Risk-free Rate, $\sigma_p$ = Standard Deviation
+                    </p>
+                </div>
+                <aside class="notes">
+                    These formulas are fundamental to our financial analysis. ROE of 16.8% shows strong profitability. Our 5-year CAGR is 19.3%, and our Sharpe ratio of 1.8 indicates excellent risk-adjusted returns.
+                </aside>
+            </section>
+
+            <!-- Code Sample: Python Analysis -->
+            <section>
+                <h2>Data Analysis Pipeline</h2>
+                <pre><code class="python" data-trim data-line-numbers="1-2|4-8|10-14">
+import pandas as pd
+import numpy as np
+
+# Load quarterly financial data
+df = pd.read_csv('q4_earnings.csv')
+revenue_growth = df['revenue'].pct_change() * 100
+profit_margin = (df['net_income'] / df['revenue']) * 100
+customer_churn = 1 - (df['retained'] / df['total_customers'])
+
+# Calculate key metrics
+metrics = {
+    'avg_revenue_growth': revenue_growth.mean(),
+    'avg_profit_margin': profit_margin.mean(),
+    'churn_rate': customer_churn.mean()
+}
+
+print(f"Revenue Growth: {metrics['avg_revenue_growth']:.2f}%")
+                </code></pre>
+                <aside class="notes">
+                    This Python code demonstrates our automated analytics pipeline. We process millions of transactions daily to generate real-time insights. The highlighted sections show data loading, metric calculations, and reporting.
+                </aside>
+            </section>
+
+            <!-- Code Sample: SQL Query -->
+            <section>
+                <h2>Transaction Analysis Query</h2>
+                <pre><code class="sql" data-trim data-line-numbers>
+SELECT 
+    customer_segment,
+    COUNT(*) as transaction_count,
+    SUM(amount) as total_volume,
+    AVG(amount) as avg_transaction_size,
+    ROUND(SUM(amount) * 100.0 / 
+          (SELECT SUM(amount) FROM transactions), 2) as pct_of_total
+FROM transactions
+WHERE transaction_date BETWEEN '2024-10-01' AND '2024-12-31'
+    AND status = 'completed'
+GROUP BY customer_segment
+HAVING SUM(amount) > 1000000
+ORDER BY total_volume DESC;
+                </code></pre>
+                <p class="fragment" style="font-size: 0.7em;">
+                    This query analyzes Q4 transaction patterns across customer segments
+                </p>
+                <aside class="notes">
+                    Our data warehouse processes over 50 million transactions per quarter. This SQL query segments customers by behavior and identifies high-value segments. Premium customers account for 42% of total volume.
+                </aside>
+            </section>
+
+            <!-- Animated Risk Management -->
+            <section>
+                <h2>Risk Management Framework</h2>
+                <div style="text-align: left; margin-left: 80px;">
+                    <h4 class="fragment fade-right">Credit Risk Assessment</h4>
+                    <ul>
+                        <li class="fragment">Non-Performing Loan Ratio: <span class="highlight-green">1.8%</span> (↓ 0.3%)</li>
+                        <li class="fragment">Coverage Ratio: 165%</li>
+                    </ul>
+                    
+                    <h4 class="fragment fade-right">Market Risk Metrics</h4>
+                    <ul>
+                        <li class="fragment">Value at Risk (95% CI): $12.4M daily</li>
+                        <li class="fragment">Stress Test Results: All scenarios passed</li>
+                    </ul>
+                    
+                    <h4 class="fragment fade-right">Operational Risk</h4>
+                    <ul>
+                        <li class="fragment">System Uptime: 99.97%</li>
+                        <li class="fragment">Fraud Detection Rate: 98.5%</li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    Our risk management has significantly improved. NPL ratio decreased due to better underwriting. VaR is well within our risk appetite. The new AI fraud system caught 15,000+ attempted frauds in Q4.
+                </aside>
+            </section>
+
+            <!-- Technology Stack -->
+            <section>
+                <h2>Technology Infrastructure</h2>
+                <pre><code class="javascript" data-trim>
+// Microservices Architecture Configuration
+const serviceConfig = {
+    authentication: {
+        provider: 'OAuth2',
+        mfa: true,
+        sessionTimeout: 900
+    },
+    payment: {
+        gateway: 'Stripe',
+        fallback: 'PayPal',
+        encryption: 'AES-256'
+    },
+    analytics: {
+        realtime: true,
+        dataWarehouse: 'Snowflake',
+        mlPlatform: 'TensorFlow'
+    }
+};
+
+// Load balancing across 12 availability zones
+const loadBalancer = new LoadBalancer({
+    zones: 12,
+    algorithm: 'least-connections'
+});
+                </code></pre>
+                <aside class="notes">
+                    Our tech stack handles 2 million concurrent users. Microservices architecture ensures 99.9% uptime. We've invested $45M in cloud infrastructure this year for scalability and security.
+                </aside>
+            </section>
+
+            <!-- Future Outlook -->
+            <section>
+                <h2>2025 Strategic Priorities</h2>
+                <div class="fragment fade-up">
+                    <h4>Growth Initiatives</h4>
+                    <ul>
+                        <li class="fragment highlight-current-blue">AI-Powered Personalization Engine</li>
+                        <li class="fragment highlight-current-blue">Blockchain Settlement System</li>
+                        <li class="fragment highlight-current-blue">Sustainable Finance Products</li>
+                    </ul>
+                </div>
+                <div class="fragment fade-up">
+                    <h4>Expected Outcomes</h4>
+                    <ul>
+                        <li class="fragment">Revenue Growth Target: <span class="highlight-green">18-22%</span></li>
+                        <li class="fragment">Cost-to-Income Ratio: <span class="highlight-green">&lt; 52%</span></li>
+                        <li class="fragment">Customer Satisfaction: <span class="highlight-green">&gt; 4.5/5.0</span></li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    Our 2025 strategy focuses on innovation and efficiency. AI personalization should boost cross-sell by 25%. Blockchain will reduce settlement times from T+2 to real-time. Sustainable products target the growing ESG market.
+                </aside>
+            </section>
+
+            <!-- Closing Slide -->
+            <section>
+                <h1>Thank You</h1>
+                <h3>Questions & Discussion</h3>
+                <br>
+                <p>
+                    <strong>Contact Information</strong><br>
+                    Email: 23f2003009@ds.study.iitm.ac.in<br>
+                    Investor Relations: investors@company.com
+                </p>
+                <br>
+                <p style="font-size: 0.7em; color: #888;">
+                    Next Earnings Call: Q1 2025 - April 2025
+                </p>
+                <aside class="notes">
+                    Thank you all for attending. We're proud of our Q4 performance and excited about 2025. Happy to answer questions about any aspect of our results or strategy. IR materials are available on our website.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <div class="email-footer">23f2003009@ds.study.iitm.ac.in</div>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+            math: {
+                mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js',
+                config: 'TeX-AMS_HTML-full'
+            }
+        });
+    </script>
 </body>
 </html>
